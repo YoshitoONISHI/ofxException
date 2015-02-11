@@ -56,11 +56,11 @@ private:
 
 //----------------------------------------------------------------------------------------
 #define ofxThrowException(EXCEPTION_TYPE, message) \
-throw EXCEPTION_TYPE(__FILE__, __PRETTY_FUNCTION__, __LINE__, message)
+throw EXCEPTION_TYPE(__FILE__, __FUNCTION__, __LINE__, message)
 
 //----------------------------------------------------------------------------------------
 #define ofxThrowExceptionf(EXCEPTION_TYPE, format, ...) \
-throw EXCEPTION_TYPE(__FILE__, __PRETTY_FUNCTION__, __LINE__, format, __VA_ARGS__)
+throw EXCEPTION_TYPE(__FILE__, __FUNCTION__, __LINE__, format, __VA_ARGS__)
 
 
 /// exception handler
